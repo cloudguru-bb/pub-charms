@@ -1,0 +1,8 @@
+rancherserver:
+  image: rancher/server 
+  cap_add:
+    - ALL
+  privileged: true
+  restart: 'yes'
+  ports:
+  - "8080:8080/tcp"
