@@ -1,8 +1,8 @@
 epic:
   series: trusty
   services:
-    "expeto-mme":
-      charm: "local:cloudguru/mwc:mme"
+    "expeto-epic”:
+      charm: "local:trusty/epic”
       num_units: 1
       annotations:
         "gui-x": "0"
