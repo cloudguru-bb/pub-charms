@@ -1,0 +1,19 @@
+epic:
+  series: trusty
+  services:
+    "expeto-mme":
+      charm: "local:cloudguru/mwc:mme"
+      num_units: 1
+      annotations:
+        "gui-x": "0"
+        "gui-y": "750"
+      to:
+        - "0"
+    "juju-gui":
+      charm: "cs:trusty/juju-gui"
+      num_units: 1
+      annotations:
+        "gui-x": "0"
+        "gui-y": "1500"
+      to:
+        - "0"

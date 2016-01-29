@@ -1,0 +1,96 @@
+mme:
+  image: cloudguru/mwc:mme
+  cap_add:
+  - ALL
+  labels:
+    io.expeto.project: mist
+    io.expeto.product: vEPC
+    io.expeto.component: mme
+    io.expeto.version: latest
+    io.rancher.container.requested_ip: 10.42.11.101
+  privileged: true
+  restart: 'no'
+
+sgw:
+  image: cloudguru/mwc:sgw
+  cap_add:
+  - ALL
+  labels:
+    io.expeto.project: mist
+    io.expeto.product: vEPC
+    io.expeto.component: sgw
+    io.expeto.version: latest
+    io.rancher.container.requested_ip: 10.42.11.103
+  privileged: true
+  restart: 'no'
+
+pgw:
+  image: cloudguru/mwc:pgw
+  cap_add:
+  - ALL
+  labels:
+    io.expeto.project: mist
+    io.expeto.product: vEPC
+    io.expeto.component: pgw
+    io.expeto.version: latest
+    io.rancher.container.requested_ip: 10.42.11.104
+  privileged: true
+  restart: 'no'
+
+hss:
+  image: cloudguru/mwc:hss
+  cap_add:
+  - ALL
+  labels:
+    io.expeto.project: mist
+    io.expeto.product: vEPC
+    io.expeto.component: hss
+    io.expeto.version: latest
+    io.rancher.container.requested_ip: 10.42.11.102
+  privileged: true
+  restart: 'no'
+
+ems:
+  image: cloudguru/mwc:ems
+  cap_add:
+  - ALL
+  labels:
+    io.expeto.project: mist
+    io.expeto.product: vEPC
+    io.expeto.component: ems
+    io.expeto.version: latest
+    io.rancher.container.requested_ip: 10.42.11.100
+  ports:
+  - "4430:443/tcp"
+  privileged: true
+  restart: 'no'
+
+pcrf:
+  image: cloudguru/mwc:pcrf
+  cap_add:
+  - ALL
+  labels:
+    io.expeto.project: mist
+    io.expeto.product: vEPC
+    io.expeto.component: pcrf
+    io.expeto.version: latest
+    io.rancher.container.requested_ip: 10.42.11.106
+  privileged: true
+  restart: 'no'
+
+fabric:
+  image: cloudguru/mwc:ovpn
+  ports:
+  - "1194:1194/udp"
+  - "1194:1194/tcp"
+  cap_add:
+  - ALL
+  labels:
+    io.expeto.project: mist
+    io.expeto.product: vEPC
+    io.expeto.component: ovpn
+    io.expeto.version: latest
+    io.rancher.container.requested_ip: 10.42.11.1
+  privileged: true
+  restart: 'no'
+
