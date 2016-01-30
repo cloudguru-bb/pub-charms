@@ -20,7 +20,7 @@ def check_configuration():
         if not config(k):
             status_set("blocked", "Missing config option {}".format(k))
             return
-
+    status_set('active', '')
     set_state('epic.configured')
 
 
