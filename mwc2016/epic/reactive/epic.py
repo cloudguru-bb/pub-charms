@@ -13,7 +13,7 @@ from charms.docker import Docker
 
 @when_not('epic.configured')
 def check_configuration():
-    required_keys = ['distribution-user'
+    required_keys = ['distribution-user',
                      'distribution-pass',
                      'distribution-email']
     for k in required_keys:
