@@ -13,14 +13,14 @@ from charms.docker import Docker
 
 @when_not('epic.configured')
 def check_configuration():
-    required_keys = ['distribution-user'
+    required_keys = ['distribution-user',
                      'distribution-pass',
                      'distribution-email']
     for k in required_keys:
         if not config(k):
             status_set("blocked", "Missing config option {}".format(k))
             return
-
+    status_set('active', '')
     set_state('epic.configured')
 
 
