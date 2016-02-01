@@ -1,4 +1,4 @@
-name: epic
+name: pcrf
 maintainer: brian baird <brian.baird@expeto.io>
 subordinate: false
 summary: Evolved Packet Core for LTE Evolved Packet Core (EPIC) PCRF
