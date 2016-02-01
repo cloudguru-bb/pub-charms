@@ -1,7 +1,7 @@
-name: eme
+name: ems
 maintainer: brian baird <brian.baird@expeto.io>
 subordinate: false
-summary: Evolved Packet Core for LTE Evolved Packet Core (EPIC) Element Management System (EMS)
+summary: Evolved Packet Core for LTE Evolved Packet Core (EPIC) EMS
 tags:
   - networking
   - teleco
