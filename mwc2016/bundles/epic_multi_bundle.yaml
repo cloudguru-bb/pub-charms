@@ -1,0 +1,67 @@
+series: trusty
+overides:
+  distribution-user: "expetoguest"
+  distribution-pass: "3xpet0guest"
+  distribution-email: "expetoguest@shaw.ca"
+services: 
+  ems: 
+    charm: "local:trusty/ems"
+    num_units: 1
+    annotations: 
+      "gui-x": "1392.3125"
+      "gui-y": "496.07147216796875"
+    to: 
+      - "4"
+  hss: 
+    charm: "local:trusty/hss"
+    num_units: 1
+    annotations: 
+      "gui-x": "2325.8292236328125"
+      "gui-y": "878.6952514648438"
+    to: 
+      - "4"
+  mme: 
+    charm: "local:trusty/mme"
+    num_units: 1
+    annotations: 
+      "gui-x": "1656.8294677734375"
+      "gui-y": "829.6952514648438"
+    to: 
+      - "4"
+  pgw: 
+    charm: "local:trusty/pgw"
+    num_units: 1
+    annotations: 
+      "gui-x": "1330.32568359375"
+      "gui-y": "1324.9532165527344"
+    to: 
+      - "4"
+  sgw: 
+    charm: "local:trusty/sgw"
+    num_units: 1
+    annotations: 
+      "gui-x": "1323.8294677734375"
+      "gui-y": "1008.6952514648438"
+    to: 
+      - "4"
+  pcrf: 
+    charm: "local:trusty/pcrf"
+    num_units: 1
+    annotations: 
+      "gui-x": "2302.829345703125"
+      "gui-y": "1279.6952514648438"
+    to: 
+      - "4"
+  fabric: 
+    charm: "local:trusty/fabric"
+    num_units: 1
+    annotations: 
+      "gui-x": "1681.8294677734375"
+      "gui-y": "1334.6952514648438"
+    to: 
+      - "4"
+relations: []
+machines: 
+  "4": 
+    series: trusty
+    constraints: "arch=amd64 cpu-cores=4 mem=16384"
