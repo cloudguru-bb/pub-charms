@@ -11,7 +11,7 @@ from charmhelpers.core.templating import render
 from charms.docker import Docker
 
 
-@when_not('epic.configured')
+@when_not('ems.configured')
 def check_configuration():
     required_keys = ['distribution-user',
                      'distribution-pass',
@@ -21,11 +21,11 @@ def check_configuration():
             status_set("blocked", "Missing config option {}".format(k))
             return
     status_set('active', '')
-    set_state('epic.configured')
+    set_state('ems.configured')
 
 
-@when('docker.available', 'epic.configured')
-def run_epic():
+@when('docker.available', 'ems.configured')
+def run_ems():
     # authenticate to private docker repository
     d = Docker()
     cfg = config()
@@ -33,7 +33,7 @@ def run_epic():
             cfg['distribution-email'])
 
     # Render the template
-    render('docker-compose.yml', 'files/epic/docker-compose.yml', cfg)
+    render('docker-compose.yml', 'files/ems/docker-compose.yml', cfg)
 
-    comp = Compose('files/epic')
+    comp = Compose('files/ems')
     comp.up()

@@ -1,0 +1,13 @@
+options:
+  distribution-user:
+    type: string
+    default:
+    description: Docker distribution username
+  distribution-pass:
+    type: string
+    default:
+    description: Docker distribution password
+  distribution-email:
+    type: string
+    default:
+    description: Docker distribution email
