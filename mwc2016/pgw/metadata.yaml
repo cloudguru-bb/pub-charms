@@ -1,0 +1,7 @@
+name: epic
+maintainer: brian baird <brian.baird@expeto.io>
+subordinate: false
+summary: Evolved Packet Core for LTE Evolved Packet Core (EPIC) PGW
+tags:
+  - networking
+  - teleco

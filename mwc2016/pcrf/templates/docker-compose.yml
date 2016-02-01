@@ -1,0 +1,12 @@
+pcrf:
+  image: cloudguru/mwc:pcrf
+  cap_add:
+  - ALL
+  labels:
+    io.expeto.project: mist
+    io.expeto.product: vEPC
+    io.expeto.component: pcrf
+    io.expeto.version: latest
+    io.rancher.container.requested_ip: 10.42.11.106
+  privileged: true
+  restart: 'no'

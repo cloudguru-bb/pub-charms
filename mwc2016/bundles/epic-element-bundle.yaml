@@ -1,0 +1,67 @@
+epic:
+  series: trusty
+  services:
+    "juju-gui":
+      charm: "cs:trusty/juju-gui"
+      num_units: 1
+      annotations:
+        "gui-x": "0"
+        "gui-y": "1500"
+      to:
+        - "0"
+    "expeto-epic-ems”:
+      charm: "local:trusty/ems”
+      num_units: 1
+      annotations:
+        "gui-x": "0"
+        "gui-y": "750"
+      to:
+        - "0"
+    "expeto-epic-mme”:
+      charm: "local:trusty/mme”
+      num_units: 1
+      annotations:
+        "gui-x": "0"
+        "gui-y": "750"
+      to:
+        - "0"
+    "expeto-epic-hss”:
+      charm: "local:trusty/hss”
+      num_units: 1
+      annotations:
+        "gui-x": "0"
+        "gui-y": "750"
+      to:
+        - "0"
+    "expeto-epic-pcrf”:
+      charm: "local:trusty/pcrf”
+      num_units: 1
+      annotations:
+        "gui-x": "0"
+        "gui-y": "750"
+      to:
+        - "0"
+    "expeto-epic-sgw”:
+      charm: "local:trusty/sgw”
+      num_units: 1
+      annotations:
+        "gui-x": "0"
+        "gui-y": "750"
+      to:
+        - "0"
+    "expeto-epic-pgw”:
+      charm: "local:trusty/pgw”
+      num_units: 1
+      annotations:
+        "gui-x": "0"
+        "gui-y": "750"
+      to:
+        - "0"
+    "expeto-epic-fabric”:
+      charm: "local:trusty/fabric”
+      num_units: 1
+      annotations:
+        "gui-x": "0"
+        "gui-y": "750"
+      to:
+        - "0"

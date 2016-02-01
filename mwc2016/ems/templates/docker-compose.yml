@@ -1,0 +1,14 @@
+ems:
+  image: cloudguru/mwc:ems
+  cap_add:
+  - ALL
+  labels:
+    io.expeto.project: mist
+    io.expeto.product: vEPC
+    io.expeto.component: ems
+    io.expeto.version: latest
+    io.rancher.container.requested_ip: 10.42.11.100
+  ports:
+  - "4430:443/tcp"
+  privileged: true
+  restart: 'no'
