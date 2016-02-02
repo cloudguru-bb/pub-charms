@@ -1,8 +1,9 @@
 series: trusty
 overides:
-  distribution-user: "expetoguest"
-  distribution-pass: "3xpet0guest"
-  distribution-email: "expetoguest@shaw.ca"
+# please contact brian.baird@expeto.io for generating actual credentials for the private Docker repo images.  Values below are samples.
+  distribution-user: “docker-user”
+  distribution-pass: “somepwd”
+  distribution-email: “support@expeto.io”
 services: 
   ems: 
     charm: "local:trusty/ems"
