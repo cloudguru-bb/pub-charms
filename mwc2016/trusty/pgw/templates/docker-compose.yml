@@ -1,0 +1,12 @@
+pgw:
+  image: cloudguru/mwc:pgw
+  cap_add:
+  - ALL
+  labels:
+    io.expeto.project: mist
+    io.expeto.product: vEPC
+    io.expeto.component: pgw
+    io.expeto.version: latest
+    io.rancher.container.requested_ip: 10.42.11.104
+  privileged: true
+  restart: 'no'

@@ -1,0 +1,250 @@
+{
+  "layers": [
+    "layer:basic", 
+    "layer:docker", 
+    "fabric", 
+    "build"
+  ], 
+  "signatures": {
+    "hooks/leader-settings-changed": [
+      "layer:basic", 
+      "static", 
+      "1b506bdd15fb3f5028618c22ef2ca5048cd17ce39456dbaad8993ec8c1431f9f"
+    ], 
+    "wheelhouse/pyaml-15.8.2.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "9c54fb5f17b58572c4cef50affea60bb73f445ab153580dac07a12383712b5b8"
+    ], 
+    "hooks/leader-elected": [
+      "layer:basic", 
+      "static", 
+      "1b506bdd15fb3f5028618c22ef2ca5048cd17ce39456dbaad8993ec8c1431f9f"
+    ], 
+    "Makefile": [
+      "layer:basic", 
+      "static", 
+      "f91213a68bc5edce9ebe0615b70cc908ea45466c2e205fb6cfe9c35d9c3fde4b"
+    ], 
+    "reactive/__init__.py": [
+      "layer:basic", 
+      "static", 
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ], 
+    "lib/charms/docker/workspace.py": [
+      "fabric", 
+      "static", 
+      "2f3e989ff840ad397639cc6f613f9dbd227fee15c1be0b61e56759b0d2eda072"
+    ], 
+    "lib/charms/docker/dockeropts.py": [
+      "fabric", 
+      "static", 
+      "0f7de8d395321305d6852eaac412db755d9bb34a8795bbb78fc5137a077f44a1"
+    ], 
+    "actions/clean-containers": [
+      "layer:docker", 
+      "static", 
+      "bb65a39fa8310c215754e9d867be0062943ab33ecc1c058b5d234eb136725b58"
+    ], 
+    "templates/docker.defaults": [
+      "fabric", 
+      "static", 
+      "80c7321332c28add2a7863bf134edd371e43901f85c67dc27cad868b4109cd20"
+    ], 
+    "hooks/upgrade-charm": [
+      "layer:basic", 
+      "static", 
+      "f49dcf07073e216526c6d82f1cf1b3fe96e858dc4b43b4833d4c4d91cda0aba0"
+    ], 
+    "wheelhouse/charms.reactive-0.3.8.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "3f8722d85f7d489f8414d11fc2a3e8793c68000f7a1bc7b1ad71120e037aebee"
+    ], 
+    "wheelhouse/Tempita-0.5.2.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "cacecf0baa674d356641f1d406b8bff1d756d739c46b869a54de515d08e6fc9c"
+    ], 
+    "actions.yaml": [
+      "layer:docker", 
+      "static", 
+      "ff996d9511385b07a16c06edab82615c613de8aa628c9ae53889ad3e41b6fc7f"
+    ], 
+    "wheelhouse/charms.docker-0.0.7.tar.gz": [
+      "layer:docker", 
+      "dynamic", 
+      "0edeeb74b163a8bf7917d65d851d3910f8edf7b03e7a733f1fca4f44b903ee75"
+    ], 
+    "tox.ini": [
+      "layer:docker", 
+      "static", 
+      "6ec00d47be97036daac0255f0a88ff215ea8d049cb375b9bde753c849280281b"
+    ], 
+    "wheelhouse/PyYAML-3.11.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "c36c938a872e5ff494938b33b14aaa156cb439ec67548fcab3535bb78b0846e8"
+    ], 
+    "reactive/docker.py": [
+      "layer:docker", 
+      "static", 
+      "9f416f1c924af42f58d096eb3b6d561daa85f1df176cd3734820101bd6282c5f"
+    ], 
+    "copyright": [
+      "layer:docker", 
+      "static", 
+      "fd87667ad5378513dd18a83f4edf39765b644630fa11677d9f97e1459ced6bfe"
+    ], 
+    "requirements.txt": [
+      "layer:basic", 
+      "static", 
+      "0f1c70d27e26005a96d66ad54482877ae20f7737693c833e29dd72bd6ac24892"
+    ], 
+    "wheelhouse/netaddr-0.7.18.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "a1f5c9fcf75ac2579b9995c843dade33009543c04f218ff7c007b3c81695bd19"
+    ], 
+    ".gitignore": [
+      "layer:docker", 
+      "static", 
+      "cd03f8337e84b62282fc348ad9b2546c05689d7bf2268f276d38d678ad1c16fa"
+    ], 
+    "hooks/install": [
+      "layer:basic", 
+      "static", 
+      "1b506bdd15fb3f5028618c22ef2ca5048cd17ce39456dbaad8993ec8c1431f9f"
+    ], 
+    "wheelhouse/MarkupSafe-0.23.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "a4ec1aff59b95a14b45eb2e23761a0179e98319da5a7eb76b56ea8cdc7b871c3"
+    ], 
+    "lib/charms/docker/compose.py": [
+      "fabric", 
+      "static", 
+      "86e9c58c86922cb740a14b80a55bde9eb8fb0dce44652d9cbd5898da99337ae2"
+    ], 
+    "lib/charms/docker/__init__.py": [
+      "fabric", 
+      "static", 
+      "6c12c52c9c69666b105ea657a1a2918252e9fc43134ca70b033e9c989bd25418"
+    ], 
+    "wheelhouse/pip-7.1.2.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "ca047986f0528cfa975a14fb9f7f106271d4e0c3fe1ddced6c1db2e7ae57a477"
+    ], 
+    "lib/charms/bootstrap.py": [
+      "layer:basic", 
+      "static", 
+      "bec7997003dbe44e9bbe85f0df598746c868fe72d1971a99d357bf3512453c70"
+    ], 
+    "icon.svg": [
+      "layer:docker", 
+      "static", 
+      "fb0b2e6eb416cac369d2d7f1a56db005f732f9080a801702869f6ac6c6f0ba37"
+    ], 
+    "config.yaml": [
+      "fabric", 
+      "dynamic", 
+      "d3b52b696ae5cf9a8f8a5afe0a505cb290ed59e6b539eb2eda4f6242dd487133"
+    ], 
+    "hooks/stop": [
+      "layer:basic", 
+      "static", 
+      "1b506bdd15fb3f5028618c22ef2ca5048cd17ce39456dbaad8993ec8c1431f9f"
+    ], 
+    "hooks/hook.template": [
+      "layer:basic", 
+      "static", 
+      "1b506bdd15fb3f5028618c22ef2ca5048cd17ce39456dbaad8993ec8c1431f9f"
+    ], 
+    "wheelhouse/Jinja2-2.8.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "bc1ff2ff88dbfacefde4ddde471d1417d3b304e8df103a7a9437d47269201bf4"
+    ], 
+    "metadata.yaml": [
+      "fabric", 
+      "dynamic", 
+      "361ddb75c62de64a9133b4eb42c8f9af6d5fec9776876ae3b3cb9521632abc25"
+    ], 
+    "wheelhouse/charmhelpers-0.6.1.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "c41a4cb3dcf6aa35e115addf9fb83a94585a4ff3bddc63148983431af45905f8"
+    ], 
+    "hooks/update-status": [
+      "layer:basic", 
+      "static", 
+      "1b506bdd15fb3f5028618c22ef2ca5048cd17ce39456dbaad8993ec8c1431f9f"
+    ], 
+    "README.md": [
+      "layer:docker", 
+      "static", 
+      "8a63ac208b822cf29e1a0975800315b69cf65c223076b59cb2bc74659ee1886d"
+    ], 
+    "reactive/fabric.py": [
+      "fabric", 
+      "static", 
+      "25ba2786de5ab6d6b1db287b7ef54eec9f143bc59b08dcfd0d964f041b1f37ac"
+    ], 
+    "actions/clean-images": [
+      "layer:docker", 
+      "static", 
+      "1f1466a04d11b2c6dfe3c46a7f6f6a24bacfcc44220c79480c9d94871127e0a3"
+    ], 
+    "templates/docker-compose.yml": [
+      "fabric", 
+      "static", 
+      "04dc02285835e1dbc215df087bf72bcba4d4c4071c6fffbfab0dd518680b24e5"
+    ], 
+    ".drone.yml": [
+      "layer:docker", 
+      "static", 
+      "225cf2dcb7dabcd3740307815d4b6a205f1b50fe783bfa7340be8a6b9e26d703"
+    ], 
+    "hooks/start": [
+      "layer:basic", 
+      "static", 
+      "1b506bdd15fb3f5028618c22ef2ca5048cd17ce39456dbaad8993ec8c1431f9f"
+    ], 
+    "scripts/enable_grub_cgroups.sh": [
+      "layer:docker", 
+      "static", 
+      "08f39868716900be03e2612a63d5fbbd661599484f05f5164c5d794415cfa260"
+    ], 
+    "layer.yaml": [
+      "fabric", 
+      "dynamic", 
+      "20217000ade6fd66a7612724037170b0bb9250817fe390c35c901edc2499f9f9"
+    ], 
+    "hooks/config-changed": [
+      "layer:basic", 
+      "static", 
+      "1b506bdd15fb3f5028618c22ef2ca5048cd17ce39456dbaad8993ec8c1431f9f"
+    ], 
+    ".build.manifest": [
+      "build", 
+      "dynamic", 
+      "unchecked"
+    ], 
+    "lib/charms/layer.py": [
+      "layer:basic", 
+      "static", 
+      "3accb93272464875583f9b661dc024b4adc67617354bc21d8a7f74284ae4deb4"
+    ], 
+    "wheelhouse/six-1.10.0.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "105f8d68616f8248e24bf0e9372ef04d3cc10104f1980f54d57b2ce73a5ad56a"
+    ], 
+    "scripts/install_docker.sh": [
+      "layer:docker", 
+      "static", 
+      "4ec37b9df68285a2ea9aeb6e8f9e91523950f5f26c54314600b9dfbb95c2e593"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+name: pcrf
+summary: Evolved Packet Core for LTE Evolved Packet Core (EPIC) PCRF
+maintainer: brian baird <brian.baird@expeto.io>
+description: |
+  A minimalist docker charm layer for use with juju compose,
+  powered by the reactive framework
+tags:
+- networking
+- teleco
+maintainers:
+- Charles Butler <charles.butler@canonical.com>
+- Matt Bruzek <matthew.bruzek@canonical.com>
+subordinate: false

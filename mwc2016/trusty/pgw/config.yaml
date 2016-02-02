@@ -1,0 +1,20 @@
+options:
+  enable-cgroups:
+    type: boolean
+    default: false
+    description: |
+      Enable GRUB cgroup overrides cgroup_enable=memory swapaccount=1. WARNING
+      changing this option will reboot the host - use with caution on production
+      services
+  distribution-user:
+    type: string
+    default:
+    description: Docker distribution username
+  distribution-pass:
+    type: string
+    default:
+    description: Docker distribution password
+  distribution-email:
+    type: string
+    default:
+    description: Docker distribution email
